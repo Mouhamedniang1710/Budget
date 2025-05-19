@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 20px;
+ 
+}
+
+.tableau-resume {
+    width: 90%;
+    justify-content: center;
+    background-color: #ffffff;
+    padding-left:11% ;
+    border-collapse: separate; 
+    border-spacing: 30px 0px; 
+    
+  }
+  
+  .tableau-resume th {
+    color: white;
+    padding: 12px;
+  }
+  
+  .tableau-resume td {
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+
+
+.container{
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+h5{
+    color: #f5b700;
+    font-size: 1.5rem;
+    /* text-align: start; */
+    /* margin-left: 140px; */
+}
+.container h5{
+  margin-top: 2%;
+}
+
+.section1{
+    text-align: center;
+}
+ .tableau{
+   border-collapse: collapse;
+   min-width: 400px;
+   width: auto;
+   box-shadow: 0 5px 50px rgb(0,0,0,0.15);
+   cursor: pointer;
+   margin: 50px auto;
+   border: 2px solid rgb(1, 7, 4);
+ }
+ thead tr {
+    background-color: #0b594a;
+    color: #fff;
+    text-align: left;
+
+ }
+ th, td{
+  padding: 15px 100px;
+  
+ }
+ tbody tr, td, th{
+    border: 1px solid;
+}
+.logo{
+    color:#0b594a;
+}
+.logo-yellow{
+    color:#f5b700;
+}
+.btn-delete{
+    background-color: rgb(255, 68, 68);
+    color: #fff;
+}
+.btn-add{
+  color: #f5b700;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+  display: inline-block;
+  
+}
+.container .btn-add {
+ margin-right: 60%;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 999; 
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  justify-content: center; 
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+}
+
+.modal-content input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+.modal-content button {
+  padding: 10px;
+  background-color: #0b594a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.close {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+

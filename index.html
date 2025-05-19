@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>budget</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <a href="pages/Dépense.html" target="_blank"></a>
+    <a href="pages/Revenu.html"></a>
+    <div class="section1">
+      <div class="parti1">
+        <h1>
+          <span class="logo">B</span><span class="logo-yellow">UDGET</span>
+        </h1>
+        <p style=" color:#0b594a;">Gestion du budget</p>
+      </div>
+    </div>
+    <div class="container">
+      <table id="resumeTable" class="tableau-resume">
+        <thead>
+          <tr>
+            <th>Budget</th>
+            <th>Dépenses</th>
+            <th>Solde</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="budgetGestion">0 </td>
+            <td id="depensesGestion">0</td>
+            <td id="soldeGestion">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+   <div class="container">
+    <h5>Liste des depenses</h5>
+    <table id="depenseTable" class="tableau">
+      <thead>
+        <tr>
+          <th>TITRE</th>
+          <th>MONTANT</th>
+          <th>ACTIONS</th>
+        </tr>
+      </thead>
+      <tbody id="depenseBody"></tbody>
+    </table>
+    <button class="btn-add" id="addDepenseButton"> ajouter depenses +</button>
+   </div>
+   
+      <div class="container">
+        <table id="revenusTable" class="tableau">
+          <thead>
+              
+              <h5>Liste des revenus</h5>
+            <tr>
+              <th>TITRE</th>
+              <th>MONTANT</th>
+              <th>ACTIONS</th>
+            </tr>
+          </thead>
+          
+          <tbody id="revenuBody">
+          </tbody>
+        </table>
+        <button class="btn-add" id="addRevenuButton"> ajouter revenu +</button>
+      </div>
+      <!-- Modal pour Dépense -->
+<div class="modal" id="modalDepense">
+  <div class="modal-content">
+    <span class="close" id="closeModalDepense">&times;</span>
+    <h3>Ajouter une dépense</h3>
+    <input type="text" id="titreDepense" placeholder="Titre">
+    <input type="number" id="montantDepense" placeholder="Montant">
+    <button id="validerDepense">Valider</button>
+  </div>
+</div>
+
+<!-- Modal pour Revenu -->
+<div class="modal" id="modalRevenu">
+  <div class="modal-content">
+    <span class="close" id="closeModalRevenu">&times;</span>
+    <h3>Ajouter un revenu</h3>
+    <input type="text" id="titreRevenu" placeholder="Titre">
+    <input type="number" id="montantRevenu" placeholder="Montant">
+    <button id="validerRevenu">Valider</button>
+  </div>
+</div>
+
+      <script src="index.js"></script>
+  </body>
+</html>
